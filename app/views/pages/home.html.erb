@@ -1,0 +1,13 @@
+<h1>Welcome to our app!</h1>
+<!-- <a href="/contact">Contact</a> -->
+<%= link_to "Contact" , teams_path %>
+<ul>
+  <% @employees.each do |employee| %>
+    <li><%= employee.capitalize %></li>
+  <% end %>
+</ul>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>

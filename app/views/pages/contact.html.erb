@@ -1,0 +1,10 @@
+<h1>Contact us!</h1>
+<input type="text"
+       name="member"
+       value="<%= params[:member] %>"
+       placeholder="Who are you looking for?">
+<ul>
+  <% @employees.each do |employee| %>
+    <li><%= employee.capitalize %></li>
+  <% end %>
+</ul>
